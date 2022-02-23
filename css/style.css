@@ -6,14 +6,15 @@
 }
 
 body {
-    font-family: 'Be Vietnam Pro', sans-serif;  
+    font-family: 'Be Vietnam Pro', sans-serif; 
+    overflow: hidden; 
 }
 
 #flex_wrapper {
     display: flex;
     width: 100%;
     height: 150px;
-    color: white;
+    color: #F5F5DC;
     align-items: center;
     justify-content:space-between;
 
@@ -24,12 +25,24 @@ body {
     font-size: 50px;
 }
 
-#menu_right {
+/* text "menu"*/
+#menu_right_not_pressed {
     margin-right: 60px;
     font-size: 30px;
+    transition: 0.2s;
 }
 
-.menu_item:hover {
+#menu_right_not_pressed:hover {
+    cursor: pointer;
+}
+
+/* ett x kommer fram*/
+#menu_right_pressed {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#menu_right_pressed:hover {
     cursor: pointer;
 }
 
@@ -39,7 +52,7 @@ body {
     height: 100vh;
     object-position: center;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
     filter: brightness(0.6);
    
 }
@@ -50,14 +63,70 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    color: #F5F5DC;
     font-size: 50px;
 }
 
 #citat {
     margin-top: 9%;
     text-align: center;
+    z-index: -1;
+    color: #F5F5DC;
 }
 
+#color1 {
+    background-color: #5EBD3E;
+    height: 30px;
+    width: 100vw;
+}
+
+#color2 {
+    background-color: #FFB900;
+    height: 30px;
+    width: 100vw;
+}
+
+#color3 {
+    background-color: #F78200;
+    height: 30px;
+    width: 100vw;
+}
+
+#color4 {
+    background-color: #E23838;
+    height: 30px;
+    width: 100vw;
+}
+
+#color5 {
+    background-color: #973999;
+    height: 30px;
+    width: 100vw;
+}
+
+#color6 {
+    background-color: #009CDF;
+    height: 30px;
+    width: 100vw;
+}
+
+#breaker {
+    filter: drop-shadow(1px 10px 20px black);
+}
+
+/* style när man klickar på x-et*/
+.pressed {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transition: 0.1s;
+    font-size: 0px;
+    z-index: -1;
+    
+}
+
+.not_pressed {
+    transition: 0.1s;
+}
 
 

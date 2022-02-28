@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     overflow: hidden;
     font-size: 16px;
 }
@@ -19,23 +19,23 @@ body {
     display: flex;
     width: 100%;
     height: 150px;
-    color: var(--font-color);
+    color: white;
     align-items: center;
     justify-content:space-between;
 
 }
 
 #title {
-    margin-left: 60px;
+    margin-left: 3%;
     font-size: 3rem;
     font-weight: 400;
+    border-bottom: solid #F5F5DC 2px;
+
 }
 
-
 #menu_button {
-    margin-right: 60px;
+    margin-right: 3%;
     font-size: 2rem;
-    transition: 0.1 s;
 }
 
 #menu_button:hover {
@@ -54,11 +54,8 @@ body {
     display: block;
 }
 
-
-/* ett x kommer fram*/
 #menu_button.pressed {
     cursor: pointer;
-    transition: 0.1s;
     color: transparent;
     
 }
@@ -75,13 +72,71 @@ body {
 #macintosh_picture {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 120%;
     object-position: center;
     object-fit: cover;
     z-index: -2;
-    filter: brightness(0.6);
+    filter: brightness(1);
 
 }
+
+#color1 {
+    background-color: #5EBD3E;
+    height: 20px;
+    width: 100vw;
+}
+
+#color2 {
+    background-color: #FFB900;
+    height: 20px;
+    width: 100vw;
+}
+
+#color3 {
+    background-color: #F78200;
+    height: 20px;
+    width: 100vw;
+}
+
+#color4 {
+    background-color: #E23838;
+    height: 20px;
+    width: 100vw;
+}
+
+#color5 {
+    background-color: #973999;
+    height: 20px;
+    width: 100vw;
+}
+
+#color6 {
+    background-color: #009CDF;
+    height: 20px;
+    width: 100vw;
+}
+
+#breaker {
+    /* filter: drop-shadow(0px 0px 7px rgb(0, 0, 10)); */
+    position: absolute;
+    filter: blur(1px);
+}
+
+
+
+#quote {
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#quote span {
+    color: #F5F5DC
+
+}
+
 
 #main_wrapper {
     height: 100vh;
@@ -90,54 +145,7 @@ body {
     justify-content: start;
     align-items: center;
     font-size: 3rem;
-}
-
-
-
-#color1 {
-    background-color: #5EBD3E;
-    height: 30px;
-    width: 100vw;
-}
-
-#color2 {
-    background-color: #FFB900;
-    height: 30px;
-    width: 100vw;
-}
-
-#color3 {
-    background-color: #F78200;
-    height: 30px;
-    width: 100vw;
-}
-
-#color4 {
-    background-color: #E23838;
-    height: 30px;
-    width: 100vw;
-}
-
-#color5 {
-    background-color: #973999;
-    height: 30px;
-    width: 100vw;
-}
-
-#color6 {
-    background-color: #009CDF;
-    height: 30px;
-    width: 100vw;
-}
-
-#breaker {
-    filter: drop-shadow(1px 10px 20px black);
-}
-
-
-
-#quote {
-    color: var(--font-color);
+    transition: 0.15s;
 }
 
 
@@ -147,14 +155,17 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    transition: 0.1s;
+    transition: 0.15s;
 
 }
 
 #quote h1 {
     margin-top: 9%;
-    text-align: center;
+    margin-left: 3%;
+    text-align: left;
     z-index: -1;
+    font-weight: 400;
+    
 }
 
 .overlay > #quote h1 {
@@ -166,11 +177,49 @@ body {
 }
 
 #x_1, #x_2 {
-    background-color: #F5F5DC;
-    width: 120px;
-    height: 15px;
-    border-radius: 5px;
+    background-color: white;
+    width: 50px;
+    height: 7px;
+    border-radius: 7px;
+    margin-right: 2rem;
 }
+
+#x_1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 3.5px;
+    
+}
+
+#x_2 {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -3.5px;
+}
+
+#exit {
+    overflow: visible;
+}
+
+#exit:hover {
+    cursor: pointer;
+}
+
+#product_1 {
+    display: flex;
+
+}
+
+#product_1_backround {
+    position: absolute;
+    width: 100vw;
+    height: 120%;
+    object-position: center;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.9);
+}
+
 
 
 

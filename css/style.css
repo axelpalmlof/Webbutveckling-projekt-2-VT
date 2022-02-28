@@ -13,7 +13,7 @@ body {
     font-size: 16px;
 }
 
-#flex_wrapper {
+#header_wrapper {
     display: flex;
     width: 100%;
     height: 150px;
@@ -23,39 +23,50 @@ body {
 
 }
 
-#menu_left {
+#title {
     margin-left: 60px;
     font-size: 3rem;
+    font-weight: 400;
 }
 
 
-#menu_right {
+#menu_button {
     margin-right: 60px;
     font-size: 2rem;
-    transition: 0.2s;
+    transition: 0.1 s;
 }
 
-#menu_right:hover {
+#menu_button:hover {
     cursor: pointer;
 }
 
-#menu_right .exit {
+.overlay > * > #menu_button {
     display: none;
 }
 
+#exit {
+    display: none;
+}
+
+.overlay > * > #exit {
+    display: block;
+}
+
+
 /* ett x kommer fram*/
-#menu_right.pressed {
+#menu_button.pressed {
     cursor: pointer;
-    transition: 0.2s;
-
-    font-size: 0;
+    transition: 0.1s;
+    color: transparent;
+    
 }
 
-#menu_right.pressed:hover {
+#menu_button.pressed:hover {
     cursor: pointer;
 }
 
-#menu_right.pressed .exit {
+
+#menu_button.pressed .exit {
     display: inline;
 }
 
@@ -70,7 +81,7 @@ body {
 
 }
 
-#foto {
+#main_wrapper {
     height: 100vh;
     flex-direction: column;
     display: flex;
@@ -121,15 +132,16 @@ body {
     filter: drop-shadow(1px 10px 20px black);
 }
 
+
+
 #quote {
-    transition: 0.1s;
     color: var(--font-color);
 }
 
-#quote.pressed {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute; 
-    color: transparent;
+
+#main_wrapper.overlay {
+    transition: 0.1s;
+    background-color: rgba(0, 0, 0, 0.8);   
     width: 100vw;
     height: 100vh;
     z-index: -1;
@@ -141,7 +153,23 @@ body {
     margin-top: 9%;
     text-align: center;
     z-index: -1;
-    color: inherit;
 }
+
+.overlay > #quote h1 {
+    display: none;
+}
+
+.overlay > #quote h1 {
+    display: none;
+}
+
+#x_1, #x_2 {
+    background-color: #F5F5DC;
+    width: 120px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+
 
 

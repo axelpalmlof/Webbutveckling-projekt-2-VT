@@ -3,18 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+
+    --font-color: #F5F5DC
 }
 
 body {
-    font-family: 'Be Vietnam Pro', sans-serif; 
-    overflow: hidden; 
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow: hidden;
+    font-size: 16px;
 }
 
 #flex_wrapper {
     display: flex;
     width: 100%;
     height: 150px;
-    color: #F5F5DC;
+    color: var(--font-color);
     align-items: center;
     justify-content:space-between;
 
@@ -22,28 +25,38 @@ body {
 
 #menu_left {
     margin-left: 60px;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
-/* text "menu"*/
-#menu_right_not_pressed {
+
+#menu_right {
     margin-right: 60px;
-    font-size: 30px;
+    font-size: 2rem;
     transition: 0.2s;
 }
 
-#menu_right_not_pressed:hover {
+#menu_right:hover {
     cursor: pointer;
+}
+
+#menu_right .exit {
+    display: none;
 }
 
 /* ett x kommer fram*/
-#menu_right_pressed {
+#menu_right.pressed {
     cursor: pointer;
     transition: 0.2s;
+
+    font-size: 0;
 }
 
-#menu_right_pressed:hover {
+#menu_right.pressed:hover {
     cursor: pointer;
+}
+
+#menu_right.pressed .exit {
+    display: inline;
 }
 
 #macintosh_picture {
@@ -54,7 +67,7 @@ body {
     object-fit: cover;
     z-index: -2;
     filter: brightness(0.6);
-   
+
 }
 
 #foto {
@@ -63,15 +76,10 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
-#citat {
-    margin-top: 9%;
-    text-align: center;
-    z-index: -1;
-    color: #F5F5DC;
-}
+
 
 #color1 {
     background-color: #5EBD3E;
@@ -113,20 +121,27 @@ body {
     filter: drop-shadow(1px 10px 20px black);
 }
 
-/* style när man klickar på x-et*/
-.pressed {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+#quote {
     transition: 0.1s;
-    font-size: 0px;
-    z-index: -1;
-    
+    color: var(--font-color);
 }
 
-.not_pressed {
+#quote.pressed {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute; 
+    color: transparent;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
     transition: 0.1s;
+
+}
+
+#quote h1 {
+    margin-top: 9%;
+    text-align: center;
+    z-index: -1;
+    color: inherit;
 }
 
 

@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #header_wrapper {
@@ -68,22 +68,22 @@ body {
     display: inline;
 }
 
-#macintosh_picture {
+#imac_picture {
     position: absolute;
     width: 100vw;
     height: 100vh;
     object-position: center;
     object-fit: cover;
     z-index: -2;
-    filter: brightness(1);
+    filter: brightness(0.8);
 
 }
 
 .breaker {
-    background-color: ;
-    height: 10px;
+    background-color: bluec v  ;
+    height: 20px;
     width: 100vw;
-    box-shadow: 0 0 5px 5px #8f958f;
+    box-shadow: 0 0 10px 1px black;
     z-index: 1000;
     position: absolute;
 }
@@ -96,6 +96,8 @@ body {
     display: flex;
     flex-direction: row;
     width: 100vw;
+    justify-content: center;
+    margin: 5%; b
 }
 
 #quote span {
@@ -113,6 +115,7 @@ body {
     align-items: center;
     font-size: 3rem;
     transition: 0.15s;
+
 }
 
 
@@ -127,9 +130,7 @@ body {
 }
 
 #quote h1 {
-    margin-top: 9%;
-    margin-left: 3%;
-    text-align: left;
+    text-align: center;
     z-index: -1;
     font-weight: 400;
     
@@ -166,45 +167,86 @@ body {
 
 #exit {
     overflow: visible;
+    margin-right: 2%;
 }
 
 #exit:hover {
     cursor: pointer;
 }
 
-#product_1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#products_wrapper {
+    display: grid;
     width: 100vw;
-    flex-direction: row;
-    height: 100vh;
+    height: 100000px;
+    background-color: #fbfbfd;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(6, 700px);
+    grid-template-areas: 
+    "b1"
+    "b2"
+    "b3" 
+    "b4"
+    "b5" 
+    "b6";
+    grid-gap: 20px;
 }
 
-#product_1_backround {
-    width: 100vw;
-    height: 100vh;
-    object-position: center;
-    object-fit: cover;
-    filter: brightness(1);
-    position: absolute;
+#gameboy_picture {
+    border-radius: 5px;
+    grid-area: b1;
+    height: 100%;
+    width: auto;
+    justify-self: flex-end;
+    margin-top: 20px;
+    transform: translateX(500px);
+    transition: 1s;
+    filter: blur(2px);
 }
 
-#product_1 h1 {
-    color: white;
+#gameboy_picture:hover {
+    transform: translateX(25%);
+    filter: blur(0);
+}
+
+#gameboy_text {
+    grid-area: b1;
+    margin-left: 5%;
+    align-self: center;
+    line-height: 400%;
     font-size: 1em;
-    z-index: 0;
+    background-color: #f5f5f7;
+    border-radius: 5px;
 
 }
 
-#product_1 p {
-    color: white;
-    z-index: 0;
-    width: 25%;
-    line-height: 30px;
-    margin-right: 3%;
-
+#macintosh_picture {
+    border-radius: 5px;
+    grid-area: b2;
+    height: 100%;
+    width: auto;
+    justify-self: flex-start;
+    transform: translateX(-500px);
+    margin-top: 20px;
+    transition: 1s;
+    filter: blur(2px);
 }
+
+#macintosh_picture:hover {
+    transform: translateX(-25%);
+    filter: blur(0);
+}
+
+#macintosh_text {
+    grid-area: b2;
+    margin-right: 5%;
+    align-self: center;
+    line-height: 400%;
+    text-align: right;
+    font-size: 1em;
+    background-color: #f5f5f7;
+    border-radius: 5px;
+}
+
 
 
 

@@ -11,7 +11,6 @@
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    overflow-x: hidden;
 }
 
 #header_wrapper {
@@ -28,7 +27,7 @@ body {
     margin-left: 3%;
     font-size: 3rem;
     font-weight: 400;
-    border-bottom: solid #F5F5DC 2px;
+    /* border-bottom: solid #F5F5DC 2px; */
 
 }
 
@@ -79,17 +78,6 @@ body {
 
 }
 
-.breaker {
-    background-color: bluec v  ;
-    height: 20px;
-    width: 100vw;
-    box-shadow: 0 0 10px 1px black;
-    z-index: 1000;
-    position: absolute;
-}
-
-
-
 #quote {
     color: white;
     font-size: 1em;
@@ -105,6 +93,11 @@ body {
 
 }
 
+#quote h1 {
+    text-align: center;
+    z-index: -1;
+    font-weight: 400;
+}
 
 #main_wrapper {
     height: 100vh;
@@ -127,13 +120,6 @@ body {
     z-index: -1;
     transition: 0.15s;
 
-}
-
-#quote h1 {
-    text-align: center;
-    z-index: -1;
-    font-weight: 400;
-    
 }
 
 .overlay > #quote h1 {
@@ -168,6 +154,7 @@ body {
 #exit {
     overflow: visible;
     margin-right: 2%;
+    position: static;
 }
 
 #exit:hover {
@@ -177,90 +164,127 @@ body {
 #products_wrapper {
     display: grid;
     width: 100vw;
-    height: 10000px;
+    height: 2300px;
     background-color: #fbfbfd;
-    grid-template-columns: 100vw;
-    grid-template-rows: repeat(6, 700px);
+    grid-template-columns: vw 50vw;
+    grid-template-rows: repeat(3, 700px);
     grid-template-areas: 
-    "b1"
-    "b2"
-    "b3" 
-    "b4"
-    "b5" 
-    "b6";
-    grid-gap: 20px;
+    "a1 b1"
+    "a2 b2"
+    "a3 b3" 
+    ;
+    gap: 50px;
+    padding-top: 50px;
 }
 
 #gameboy_picture {
-    border-radius: 20px;
+    filter: brightness(0.9);
+    border-radius: 10px;
     grid-area: b1;
     height: 100%;
     width: auto;
     justify-self: flex-end;
-    margin-top: 20px;
     transform: translateX(300px);
     transition: 1s;
-    filter: brightness(0.7);
 }
 
 #gameboy_picture:hover {
-    transform: translateX(20%);
-    filter: brightness(1);
+    filter: brightness(1.15);
+    transform: translateX(18%);
+    transition-delay: 0.2s;
 }
 
 #gameboy_text {
-    grid-area: b1;
-    margin-left: 3%;
+    grid-area: a1;
+    justify-self: center;
     align-self: center;
     line-height: 300%;
     font-size: 1.5em;
     background-color: #f5f5f7;
-    border-radius: 20px;
-    padding-left: 1%;
+    border-radius: 10px;
+    padding: 1%;
 
 }
 
 #macintosh_picture {
-    border-radius: 20px;
-    grid-area: b2;
+    filter: brightness(1);
+    border-radius: 10px;
+    grid-area: a2;
     height: 100%;
     width: auto;
     justify-self: flex-start;
     transform: translateX(-100px);
-    margin-top: 20px;
     transition: 1s;
-    filter: brightness(0.7);
 }
 
 #macintosh_picture:hover {
+    filter: brightness(1.1);
     transform: translateX(-3%);
-    filter: brightness(1);
+    transition-delay: 0.2s;
+
+
 }
 
 #macintosh_text {
     grid-area: b2;
-    margin-right: 3%;
+    justify-self: center;
     align-self: center;
     line-height: 300%;
     text-align: right;
     font-size: 1.5em;
     background-color: #f5f5f7;
-    border-radius: 20px;
-    padding-right: 1%;
+    border-radius: 10px;
+    padding: 1%;
 }
 
-@media screen and (max-width: 900px){
+#iphone_picture {
+    filter: brightness(1);
+    border-radius: 10px;
+    grid-area: b3;
+    height: 100%;
+    width: auto;
+    justify-self: flex-end;
+    transform: translateX(230px);
+    transition: 1s;
+}
 
+#iphone_picture:hover {
+    filter: brightness(1.5);
+    transform: translateX(13%);
+    transition-delay: 0.2s;
+
+}
+
+#iphone_text {
+    grid-area: a3;
+    justify-self: center;
+    align-self: center;
+    line-height: 300%;
+    font-size: 1.5em;
+    background-color: #f5f5f7;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+@media screen and (max-width: 1300px) {
+  
     #quote {
         font-size: 0.7em;
         margin-top: 20%;
     }
 
-    #macintosh_text, #gameboy_text {
+    #macintosh_text, #gameboy_text, #iphone_text {
         font-size: 1em;
         text-align: left;
         line-height: 300%;
         padding: 3%;   
+        width: 100vw;
+        justify-self: center;
+        border-radius: 5px;
+    }
+
+    #macintosh_text {
+        grid-area: a2;
     }
 
     #gameboy_picture:hover {
@@ -271,20 +295,24 @@ body {
         transform: translateX(-100%);
     }
 
-    #macintosh_picture, #gameboy_picture {
+    #macintosh_picture {
+        transform: translateX(-150px);
+    }
+
+    #iphone_picture {
+        transform: translateX(300px);
+    }
+
+    #iphone_picture:hover {
+        transform: translateX(100%);
+    }
+
+    #iphone_picture, #macintosh_picture, #gameboy_picture {
         filter: brightness(1);
     }
 
     #exit {
         overflow: visible;
-        margin-right: 20px;
-
+        margin-right: -10px;
 }
-
-
-
-
-
-
-
-
+}

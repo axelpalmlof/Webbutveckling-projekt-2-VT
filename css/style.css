@@ -86,6 +86,7 @@ body {
     width: 100vw;
     justify-content: center;
     margin-top: 3%;
+
 }
 
 #quote span {
@@ -191,7 +192,6 @@ body {
 #gameboy_picture:hover {
     filter: brightness(1.15);
     transform: translateX(18%);
-    transition-delay: 0.2s;
 }
 
 #gameboy_text {
@@ -200,9 +200,10 @@ body {
     align-self: center;
     line-height: 300%;
     font-size: 1.5em;
-    background-color: #f5f5f7;
+    background-color: #fbfbfd;
     border-radius: 10px;
-    padding: 1%;
+    padding: 5%;
+    width: 90%;
 
 }
 
@@ -218,9 +219,8 @@ body {
 }
 
 #macintosh_picture:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.15);
     transform: translateX(-3%);
-    transition-delay: 0.2s;
 
 
 }
@@ -232,9 +232,12 @@ body {
     line-height: 300%;
     text-align: right;
     font-size: 1.5em;
-    background-color: #f5f5f7;
+    background-color: #fbfbfd;
     border-radius: 10px;
-    padding: 1%;
+    padding: 5%;
+    width: 90%;
+
+
 }
 
 #iphone_picture {
@@ -251,7 +254,6 @@ body {
 #iphone_picture:hover {
     filter: brightness(1.5);
     transform: translateX(13%);
-    transition-delay: 0.2s;
 
 }
 
@@ -261,12 +263,13 @@ body {
     align-self: center;
     line-height: 300%;
     font-size: 1.5em;
-    background-color: #f5f5f7;
+    background-color: #fbfbfd;
     border-radius: 10px;
-    padding: 1%;
+    padding: 5%;
+    width: 90%;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 900px) {
   
     #quote {
         font-size: 0.7em;
@@ -277,7 +280,7 @@ body {
         font-size: 1em;
         text-align: left;
         line-height: 300%;
-        padding: 3%;   
+        padding: 5%;   
         width: 100vw;
         justify-self: center;
         border-radius: 5px;
@@ -295,16 +298,16 @@ body {
         transform: translateX(-100%);
     }
 
+    #iphone_picture:hover {
+        transform: translateX(100%);
+    }
+
     #macintosh_picture {
-        transform: translateX(-150px);
+        transform: translateX(-275px);
     }
 
     #iphone_picture {
-        transform: translateX(300px);
-    }
-
-    #iphone_picture:hover {
-        transform: translateX(100%);
+        transform: translateX(250px);
     }
 
     #iphone_picture, #macintosh_picture, #gameboy_picture {
@@ -316,3 +319,12 @@ body {
         margin-right: -10px;
 }
 }
+
+@media screen and (max-width: 1190px) {
+
+    #macintosh_text, #gameboy_text, #iphone_text {
+        overflow-wrap: break-word;
+    }
+}
+
+

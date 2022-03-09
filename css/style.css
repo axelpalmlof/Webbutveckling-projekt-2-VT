@@ -165,7 +165,7 @@ body {
 #products_wrapper {
     display: grid;
     width: 100vw;
-    height: 2300px;
+    height: auto;
     background-color: #fbfbfd;
     grid-template-columns: vw 50vw;
     grid-template-rows: repeat(3, 700px);
@@ -174,8 +174,9 @@ body {
     "a2 b2"
     "a3 b3" 
     ;
-    gap: 50px;
-    padding-top: 50px;
+    gap: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #gameboy_picture {
@@ -191,7 +192,7 @@ body {
 
 #gameboy_picture:hover {
     filter: brightness(1.15);
-    transform: translateX(18%);
+    transform: translateX(25%);
 }
 
 #gameboy_text {
@@ -220,7 +221,7 @@ body {
 
 #macintosh_picture:hover {
     filter: brightness(1.15);
-    transform: translateX(-3%);
+    transform: translateX(-8%);
 
 
 }
@@ -253,7 +254,7 @@ body {
 
 #iphone_picture:hover {
     filter: brightness(1.5);
-    transform: translateX(13%);
+    transform: translateX(20%);
 
 }
 
@@ -302,12 +303,16 @@ body {
         transform: translateX(100%);
     }
 
+    #gameboy_picture {
+        transform: translateX(130px);
+    }
+
     #macintosh_picture {
-        transform: translateX(-275px);
+        transform: translateX(-285px);
     }
 
     #iphone_picture {
-        transform: translateX(250px);
+        transform: translateX(100px);
     }
 
     #iphone_picture, #macintosh_picture, #gameboy_picture {

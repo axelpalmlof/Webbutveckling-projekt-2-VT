@@ -7,8 +7,6 @@
     --font-color: #F5F5DC
 }
 
-@import url('https://image0.uhdpaper.com/dl/wallpaper/uhdpaper.com-download-4K-350-@6463383929100135349.jpg?dl=//image0.uhdpaper.com/wallpaper/yorick-lol-splash-art-uhdpaper.com-4K-350.jpg');
-
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -67,6 +65,32 @@ body {
     display: inline;
 }
 
+#overlay-menu {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-weight: lighter;
+}
+
+.overlay * #overlay-menu {
+    display: inline-block;
+}
+
+#overlay-menu li {
+    margin: 10% 0;
+    list-style: none;
+
+}
+
+#overlay-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+
 #imac_picture {
     position: absolute;
     width: 100vw;
@@ -75,7 +99,6 @@ body {
     object-fit: cover;
     z-index: -2;
     filter: brightness(0.8);
-
 }
 
 #quote {
@@ -85,8 +108,7 @@ body {
     flex-direction: row;
     width: 100vw;
     justify-content: center;
-    margin-top: 3%;
-
+    padding-top: 3%;
 }
 
 #quote span {
@@ -270,11 +292,12 @@ body {
     width: 90%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
   
     #quote {
         font-size: 0.7em;
-        margin-top: 20%;
+        top: 25%;
+        position: absolute;
     }
 
     #macintosh_text, #gameboy_text, #iphone_text {
@@ -331,5 +354,7 @@ body {
         overflow-wrap: break-word;
     }
 }
+
+
 
 

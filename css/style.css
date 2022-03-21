@@ -11,6 +11,8 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+/* main sida css */
+
 #header_wrapper {
     display: flex;
     width: 100%;
@@ -25,7 +27,6 @@ body {
     margin-left: 3%;
     font-size: 3rem;
     font-weight: 400;
-    /* border-bottom: solid #F5F5DC 2px; */
 
 }
 
@@ -68,7 +69,7 @@ body {
 #overlay-menu {
     display: none;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
@@ -80,9 +81,9 @@ body {
 }
 
 #overlay-menu li {
-    margin: 10% 0;
     list-style: none;
-
+    line-height: 200%;
+    letter-spacing: 5px;
 }
 
 #overlay-menu li a {
@@ -201,6 +202,10 @@ body {
     padding-bottom: 200px;
 }
 
+#products_wrapper b{
+    letter-spacing: 3px;
+}
+
 #gameboy_picture {
     filter: brightness(0.9);
     border-radius: 10px;
@@ -292,6 +297,14 @@ body {
     width: 90%;
 }
 
+/* _________________________________________________________________________ */
+
+/* gamaboy sida css */
+
+
+
+
+
 @media screen and (max-width: 1500px) {
   
     #quote {
@@ -345,14 +358,6 @@ body {
     #exit {
         overflow: visible;
         margin-right: -10px;
-}
-}
-
-@media screen and (max-width: 1190px) {
-
-    #macintosh_text, #gameboy_text, #iphone_text {
-        overflow-wrap: break-word;
-    }
 }
 
 

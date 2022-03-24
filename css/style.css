@@ -348,59 +348,43 @@ body {
 
 #gameboy_spec_wrapper {
     display: flex;
-    flex-direction: row;
     height: 100vh;
     width: 100vw;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    text-align: center;
+    flex-direction: row;
+}
+
+#gameboy_ram_picture_wrap {
+    height: 100%;
+    width: 50vw;
+
+}
+
+#gameboy_screen_picture_wrap {
+    height: 100%;
+    width: 50vw;
 }
 
 #gameboy_ram_picture {
     height: auto;
-    width: 800px;
-    z-index: -100;
+    width: 90%;
     border-radius: 20px;
-    filter: brightness(0.5);
+    
 }
 
 #gameboy_screen_picture {
     height: auto;
-    width: 500px;
-    z-index: -100;
+    width: 60%;
     border-radius: 20px;
 }
 
-#gameboy_spec_wrapper_text {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#gameboy_spec_wrapper_text {
+#gameboy_ram_text {
+    position: absolute;
     color: white;
-    font-size: 3em;
-}
-
-#gameboy_spec_wrapper_text{
-    text-align: center;
-    letter-spacing: 20px;
-}
-
-#gameboy_spec_wrapper_text p {
-    font-weight: 400;
 }
 
 #gameboy_screen_text {
-    padding-left: 23%;
-}
-
-#gameboy_ram_text {
-    padding-right: 13%;
+    position: absolute;
+    color: white;
 }
 
 

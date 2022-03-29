@@ -477,6 +477,8 @@ body {
     display: flex;
     width: 100vw;
     height: 1010px;
+    justify-content: center;
+    align-items: center;
 }
 
 #macintosh_spec_picture {
@@ -489,9 +491,7 @@ body {
 }
 
 #macintosh_spec_text{
-    color: red;
-    justify-self: center;
-    align-self: center;
+    color: white;
 
 }
 

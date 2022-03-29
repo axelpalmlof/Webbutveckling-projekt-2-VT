@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-
     --font-color: #F5F5DC
 }
 
@@ -13,6 +12,8 @@ body {
     font-family: 'Inter';
 }
 
+
+/* _________________________________________________________________________ */
 /* main sida css */
 
 #header_wrapper {
@@ -94,15 +95,15 @@ body {
 }
 
 
-#website_head {
+.website_head {
     position: absolute;
     width: 100vw;
     height: 100vh;
     object-position: center;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.8);
-    box-shadow: 0px 0px 20px black;
+    filter: brightness(0.7);
+    box-shadow: 0px 0px 10px 0px black;
 
 }
 
@@ -193,7 +194,7 @@ body {
     display: grid;
     width: 100vw;
     height: auto;
-    background-color: #fbfbfd;
+    background-color: #f5f5f7;
     grid-template-columns: vw 50vw;
     grid-template-rows: repeat(3, 700px);
     grid-template-areas: 
@@ -201,7 +202,7 @@ body {
     "a2 b2"
     "a3 b3" 
     ;
-    gap: 200px;
+    gap: 400px;
     padding-top: 200px;
     padding-bottom: 200px;
     z-index: -100;
@@ -221,7 +222,6 @@ body {
     justify-self: flex-end;
     transform: translateX(300px);
     transition: 1s;
-    box-shadow: 0px 0px 5px black;
 
 }
 
@@ -236,7 +236,6 @@ body {
     align-self: center;
     line-height: 300%;
     font-size: 1.5em;
-    background-color: #fbfbfd;
     border-radius: 10px;
     padding: 5%;
     width: 90%;
@@ -252,7 +251,6 @@ body {
     justify-self: flex-start;
     transform: translateX(-100px);
     transition: 1s;
-    box-shadow: 0px 0px 5px black;
 
 }
 
@@ -270,7 +268,6 @@ body {
     line-height: 300%;
     text-align: right;
     font-size: 1.5em;
-    background-color: #fbfbfd;
     border-radius: 10px;
     padding: 5%;
     width: 90%;
@@ -287,7 +284,6 @@ body {
     justify-self: flex-end;
     transform: translateX(230px);
     transition: 1s;
-    box-shadow: 0px 0px 5px black;
 
 }
 
@@ -303,7 +299,6 @@ body {
     align-self: center;
     line-height: 300%;
     font-size: 1.5em;
-    background-color: #fbfbfd;
     border-radius: 10px;
     padding: 5%;
     width: 90%;
@@ -323,8 +318,7 @@ body {
 }
 
 .gameboy_quote h1 {
-    color: #f5f5f7;
-    filter: drop-shadow(5px 5px black);
+    color: white;
 
 }
 
@@ -334,8 +328,7 @@ body {
     position: absolute;
     z-index: -100;
     border-radius: 20px;
-    filter: brightness(0.4);
-    box-shadow: 0px 0px 5px black;
+    filter: brightness(0.7);
 }
 
 #gameboy_cpu_wrapper {
@@ -344,6 +337,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    margin-top: 300px;
 
 }
 
@@ -365,6 +359,7 @@ body {
     width: 100vw;
     flex-direction: row;
     justify-content: center;
+    margin-top: 200px;
 
 }
 
@@ -388,16 +383,14 @@ body {
     height: auto;
     width: 90%;
     border-radius: 20px;
-    filter: brightness(0.7);
-    box-shadow: 0px 0px 5px black;
+    filter: brightness(0.9);
 }
 
 #gameboy_screen_picture {
     height: auto;
     width: 60%;
     border-radius: 20px;
-    filter: brightness(0.8);
-    box-shadow: 0px 0px 5px black;
+    filter: brightness(0.9);
 }
 
 #gameboy_ram_text {
@@ -431,7 +424,7 @@ body {
 /* macintosh sida css */
 
 #macintosh_body {
-    background: #fbfbfd;
+    background: #f5f5f7;
 }
 
 .macintosh_quote  {
@@ -440,72 +433,128 @@ body {
 }
 
 .macintosh_quote h1 {
-    color: #f5f5f7;
-    filter: drop-shadow(5px 5px black);
+    color: white;
 }
 
 #ui_wrap {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 30%;
+    padding-bottom: 30%;
 }
 
 #macintosh_ui_title {
-    font-size: 4em;
-    padding-bottom: 5%;
+    font-size: 7em;
+    padding-bottom: 30%;
+}
+
+#macintosh_ui_title span {
+    color: #06c;
 }
 
 #macintosh_ui_gif {
     height: auto;
-    width: 30vw;
+    width: 50vw;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px black;
 
 }
 
 #macintosh_ui_text {
-    width: 1150px;
+    width: 40vw;
     font-size: 1.5em;
     line-height: 50px;
-    margin-top: 5%;
-    text-align: left;
+    margin-top: 20%;
+    text-align: center;
 }
 
 #macintosh_spec_wrap {
     display: flex;
     width: 100vw;
-    height: 1010px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px black;
+
 }
 
 #macintosh_spec_picture {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: -100;
+    filter: brightness(0.9);
 
 }
 
 #macintosh_spec_text{
     color: white;
-
+    font-size: 5em;
+    text-align: center;
+    line-height: 200px;
+    letter-spacing: 20px;
 }
 
 /* _________________________________________________________________________ */
+/* css för iphone sida */
+
+#iphone_body {
+    background: #000;
+}
+
+.iphone_quote h1 {
+    padding-top: 5%;
+}
+
+#invent {
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+    font-size: 6em;
+    justify-content: center;
+    align-items: center;
+}
+
+#invent h2 span {
+    color: rgb(219, 6, 219);
+}
+
+#iphone_screen_wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphone_screen_title {
+    position: absolute;
+    font-size: 7em;
+    color: white;
+    text-align: center;
+    letter-spacing: 20px;
+
+}
+
+#iphone_screen_picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(0.6);
+}
 
 
+/* _________________________________________________________________________ */
 /* css för mobile (alla sidor) */
 
 @media screen and (max-width: 1000px) {
-  
-    #quote {
-        font-size: 0.7em;
-        top: 25%;
-        position: absolute;
+
+    #overlay-menu {
+        padding-top: 10%;
     }
 
     #macintosh_text, #gameboy_text, #iphone_text {
@@ -592,6 +641,34 @@ body {
     #gameboy_cpu_wrapper h2, #gameboy_screen_text, #gameboy_ram_text  {
         font-size: 3.5em;
         letter-spacing: 10px;
+    }
+
+    #macintosh_spec_text{
+        font-size: 2em;
+        text-align: center;
+        line-height: 100px;
+        letter-spacing: 20px;
+    }
+    
+    #macintosh_ui_title {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    #macintosh_ui_gif {
+        height: auto;
+        width: 80vw;
+        border-radius: 20px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    
+    }
+    
+    #macintosh_ui_text {
+        width: 80vw;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: center;
     }
 
 

@@ -16,6 +16,10 @@ body {
 /* _________________________________________________________________________ */
 /* main sida css */
 
+#home_page_head {
+    filter: brightness(0.8);
+}
+
 #header_wrapper {
     display: flex;
     width: 100%;
@@ -102,7 +106,6 @@ body {
     object-position: center;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.7);
     box-shadow: 0px 0px 10px 0px black;
 
 }
@@ -194,7 +197,7 @@ body {
     display: grid;
     width: 100vw;
     height: auto;
-    background-color: #f5f5f7;
+    background: rgb(240, 240, 240);
     grid-template-columns: vw 50vw;
     grid-template-rows: repeat(3, 700px);
     grid-template-areas: 
@@ -308,8 +311,13 @@ body {
 
 /* gamaboy sida css */
 
+#gameboy_page_head {
+    filter: brightness(0.9);
+}
+
 #gameboy_body {
-    background: #fbfbfd;
+    background: rgb(240, 240, 240);
+
 }
 
 .gameboy_quote  {
@@ -337,7 +345,8 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    margin-top: 300px;
+    margin-top: 20%;
+    margin-bottom: 10%;
 
 }
 
@@ -423,8 +432,12 @@ body {
 /* _________________________________________________________________________ */
 /* macintosh sida css */
 
+#macintosh_page_head {
+    filter: brightness(0.9);
+}
+
 #macintosh_body {
-    background: #f5f5f7;
+    background: rgb(240, 240, 240);
 }
 
 .macintosh_quote  {
@@ -440,13 +453,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 50%;
+    padding-bottom: 50%;
 }
 
 #macintosh_ui_title {
     font-size: 7em;
-    padding-bottom: 30%;
+    padding-bottom: 10%;
 }
 
 #macintosh_ui_title span {
@@ -461,11 +474,11 @@ body {
 }
 
 #macintosh_ui_text {
-    width: 40vw;
+    width: 67vw;
     font-size: 1.5em;
     line-height: 50px;
-    margin-top: 20%;
-    text-align: center;
+    margin-top: 10%;
+    text-align: left;
 }
 
 #macintosh_spec_wrap {
@@ -484,7 +497,7 @@ body {
     height: 100vh;
     position: absolute;
     z-index: -100;
-    filter: brightness(0.9);
+    filter: brightness(1);
 
 }
 
@@ -499,8 +512,12 @@ body {
 /* _________________________________________________________________________ */
 /* css för iphone sida */
 
+#iphone_page_head {
+    filter: brightness(0.9);
+}
+
 #iphone_body {
-    background: #000;
+    background: rgb(240, 240, 240);
 }
 
 .iphone_quote h1 {
@@ -511,7 +528,7 @@ body {
     height: 200vh;
     width: 100vw;
     display: flex;
-    color: white;
+    color: black;
     font-size: 6em;
     justify-content: center;
     align-items: center;
@@ -552,10 +569,6 @@ body {
 /* css för mobile (alla sidor) */
 
 @media screen and (max-width: 1000px) {
-
-    #overlay-menu {
-        padding-top: 10%;
-    }
 
     #macintosh_text, #gameboy_text, #iphone_text {
         font-size: 1em;

@@ -90,7 +90,6 @@ body {
 #overlay-menu li {
     list-style: none;
     line-height: 200%;
-    letter-spacing: 5px;
 }
 
 #overlay-menu li a {
@@ -121,6 +120,7 @@ body {
 
  .main_quote {
      padding-top: 12%;
+     padding-bottom: 12%;
  }
 
 #quote h1 {
@@ -354,7 +354,7 @@ body {
     color: white;
     font-size: 6em;
     text-align: center;
-    letter-spacing: 40px;
+    letter-spacing: 5px;
 }
 
 #gameboy_cpu_wrapper h2 p {
@@ -407,7 +407,7 @@ body {
     position: absolute;
     text-align: center;
     font-size: 5em;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 
 }
 
@@ -416,7 +416,7 @@ body {
     position: absolute;
     text-align: center;
     font-size: 4em;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 #gameboy_ram_picture_wrap h2 p {
@@ -475,7 +475,7 @@ body {
 
 #macintosh_ui_title {
     font-size: 7em;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 #macintosh_ui_title span {
@@ -529,8 +529,7 @@ body {
     color: white;
     font-size: 5em;
     text-align: center;
-    line-height: 200px;
-    letter-spacing: 20px;
+    line-height: 170px;
 }
 
 /* _________________________________________________________________________ */
@@ -581,8 +580,13 @@ body {
     font-size: 7em;
     color: white;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 
+}
+
+#iphone_design_title p {
+    font-size: 0.7em;
+    font-weight: 400;
 }
 
 #iphone_design_picture {
@@ -632,7 +636,9 @@ body {
 #iphone_spec_wrap {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 #iphone_camera_wrap {
@@ -683,8 +689,68 @@ body {
 
 @media screen and (max-width: 1300px) {
 
+    #body {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #iphone_screen_title {
+        font-size: 5em;
+    }
+
+    #iphone_camera_title {
+        font-size: 5em;
+    }
+
+    #iphone_camera_picture {
+        width: 200%;
+        height: auto;
+    }
+
+    #iphone_design_text_wrap {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    #iphone_screen_picture {
+        width: 200%;
+        height: auto;
+    }
+
+    #iphone_screen_wrap {
+        width: 100vw;
+    }
+
+    #iphone_camera_wrap {
+        padding-top: 30%;
+        width: 100vw;
+        padding-bottom: 30%;
+    }
+
+    #iphone_spec_wrap {
+        flex-direction: column;
+    }
+
+    #iphone_design_text_wrap p {
+        width: 90vw;
+        font-size: 1em;
+        line-height: 30px;
+        text-align: left;
+        font-size: 1em;
+        height: 300px;
+    }
+
+    #iphone_design_title {
+        font-size: 4em;
+    }
+
+    #iphone_design_picture {
+        width: 200%;
+    }
+
     #reinvent {
-        font-size: 2em;
+        font-size: 2.5em;
+        height: 70vh;
     }
 
     #title {
@@ -705,6 +771,7 @@ body {
 
     .iphone_quote {
         padding-top: 30%;
+        padding-bottom: 70%;
     }
 
     #quote {
@@ -798,18 +865,17 @@ body {
 
     #gameboy_cpu_wrapper h2, #gameboy_screen_text, #gameboy_ram_text  {
         font-size: 3.5em;
-        letter-spacing: 10px;
     }
 
     #gameboy_invent {
         font-size: 2.4em;
+        height: 70vh;
     }
 
     #macintosh_spec_text{
         font-size: 2em;
         text-align: center;
         line-height: 100px;
-        letter-spacing: 20px;
     }
     
     #macintosh_ui_title {
@@ -827,15 +893,15 @@ body {
     }
     
     #macintosh_ui_text {
-        width: 80vw;
+        width: 90vw;
         font-size: 1em;
-        line-height: 20px;
+        line-height: 30px;
         text-align: left;
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     #ui_wrap p {
-        height: 220px;
+        height: 300px;
     }
 
 }

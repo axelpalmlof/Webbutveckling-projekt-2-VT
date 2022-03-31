@@ -182,7 +182,7 @@ body {
     display: grid;
     width: 100vw;
     height: auto;
-    background: rgb(240, 240, 240);
+    background: #f5f5f7;
     grid-template-rows: repeat(3, 700px);
     grid-template-areas: 
     "a1 b1"
@@ -291,7 +291,7 @@ body {
 }
 
 #gameboy_body {
-    background: rgb(240, 240, 240);
+    background: #f5f5f7;
 }
 
 .gameboy_quote {
@@ -433,7 +433,7 @@ body {
 }
 
 #macintosh_body {
-    background: rgb(240, 240, 240);
+    background: #f5f5f7;
 }
 
 .macintosh_quote {
@@ -459,7 +459,7 @@ body {
 }
 
 #macintosh_ui_title span {
-    color: #06c;
+    color: #fa7970;
 }
 
 #ui_wrap h2 {
@@ -517,7 +517,7 @@ body {
 }
 
 #iphone_body {
-    background: rgb(240, 240, 240);
+    background: #f5f5f7;
 }
 
 #reinvent {
@@ -536,7 +536,7 @@ body {
 }
 
 #reinvent h2 span {
-    color: #06c;
+    color: #873af7;
 }
 
 #iphone_design_wrap {

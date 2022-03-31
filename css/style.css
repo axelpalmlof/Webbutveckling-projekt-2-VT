@@ -5,16 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    --font-color: #F5F5DC
+    --font-color: #F5F5DC;
 }
 
 body {
     font-family: 'Inter';
 }
-
-
-/* _________________________________________________________________________ */
-/* main sida css */
 
 #home_page_head {
     filter: brightness(0.8);
@@ -26,15 +22,13 @@ body {
     height: 150px;
     color: white;
     align-items: center;
-    justify-content:space-between;
-
+    justify-content: space-between;
 }
 
 #title {
     margin-left: 3%;
     font-size: 3rem;
     font-weight: 400;
-
 }
 
 #menu_button {
@@ -46,7 +40,7 @@ body {
     cursor: pointer;
 }
 
-.overlay > * > #menu_button {
+.overlay>*>#menu_button {
     display: none;
 }
 
@@ -54,20 +48,18 @@ body {
     display: none;
 }
 
-.overlay > * > #exit {
+.overlay>*>#exit {
     display: block;
 }
 
 #menu_button.pressed {
     cursor: pointer;
     color: transparent;
-    
 }
 
 #menu_button.pressed:hover {
     cursor: pointer;
 }
-
 
 #menu_button.pressed .exit {
     display: inline;
@@ -97,7 +89,6 @@ body {
     color: white;
 }
 
-
 .website_head {
     position: absolute;
     width: 100vw;
@@ -105,8 +96,6 @@ body {
     object-position: center;
     object-fit: cover;
     z-index: -1;
-    box-shadow: 0px 0px 40px 1px black;
-
 }
 
 #quote {
@@ -118,10 +107,10 @@ body {
     justify-content: center;
 }
 
- .main_quote {
-     padding-top: 12%;
-     padding-bottom: 12%;
- }
+.main_quote {
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
 
 #quote h1 {
     text-align: center;
@@ -139,29 +128,27 @@ body {
     align-items: center;
     font-size: 3rem;
     transition: 0.15s;
-
 }
-
 
 #main_wrapper.overlay {
     transition: 0.1s;
-    background-color: rgba(0, 0, 0, 0.8);   
+    background-color: rgb(0, 0, 0, 0.8);
     width: 100vw;
     height: 100vh;
     z-index: -1;
     transition: 0.15s;
-
 }
 
-.overlay > #quote h1 {
+.overlay>#quote h1 {
     display: none;
 }
 
-.overlay > #quote h1 {
+.overlay>#quote h1 {
     display: none;
 }
 
-#x_1, #x_2 {
+#x_1,
+#x_2 {
     background-color: white;
     width: 50px;
     height: 7px;
@@ -173,7 +160,6 @@ body {
     transform: rotate(45deg);
     position: relative;
     top: 3.5px;
-    
 }
 
 #x_2 {
@@ -197,12 +183,11 @@ body {
     width: 100vw;
     height: auto;
     background: rgb(240, 240, 240);
-    grid-template-columns: vw 50vw;
     grid-template-rows: repeat(3, 700px);
     grid-template-areas: 
     "a1 b1"
     "a2 b2"
-    "a3 b3" 
+    "a3 b3"
     ;
     gap: 400px;
     padding-top: 200px;
@@ -220,7 +205,6 @@ body {
     justify-self: flex-end;
     transform: translateX(350px);
     transition: 1s;
-
 }
 
 #gameboy_picture:hover {
@@ -240,7 +224,6 @@ body {
     border-radius: 20px;
     margin-left: 10%;
     text-align: left;
-
 }
 
 #macintosh_picture {
@@ -252,14 +235,11 @@ body {
     justify-self: flex-start;
     transform: translateX(-170px);
     transition: 1s;
-
 }
 
 #macintosh_picture:hover {
     filter: brightness(1.15);
     transform: translateX(-8%);
-
-
 }
 
 #macintosh_text {
@@ -274,8 +254,6 @@ body {
     padding: 30px;
     border-radius: 20px;
     margin-right: 10%;
-
-
 }
 
 #iphone_picture {
@@ -287,13 +265,11 @@ body {
     justify-self: flex-end;
     transform: translateX(300px);
     transition: 1s;
-
 }
 
 #iphone_picture:hover {
     filter: brightness(1.5);
     transform: translateX(20%);
-
 }
 
 #iphone_text {
@@ -310,26 +286,20 @@ body {
     text-align: left;
 }
 
-/* _________________________________________________________________________ */
-
-/* gamaboy sida css */
-
 #gameboy_page_head {
-    filter: brightness(1);
+    filter: brightness(0.8);
 }
 
 #gameboy_body {
     background: rgb(240, 240, 240);
-
 }
 
-.gameboy_quote  {
+.gameboy_quote {
     margin-top: 10%;
 }
 
 .gameboy_quote h1 {
     color: white;
-
 }
 
 #gameboy_cpu_picture {
@@ -347,10 +317,9 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-
 }
 
-#gameboy_cpu_wrapper h2{
+#gameboy_cpu_wrapper h2 {
     color: white;
     font-size: 6em;
     text-align: center;
@@ -368,8 +337,6 @@ body {
     width: 100vw;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10%px;
-
 }
 
 #gameboy_ram_picture_wrap {
@@ -408,7 +375,6 @@ body {
     text-align: center;
     font-size: 5em;
     letter-spacing: 5px;
-
 }
 
 #gameboy_screen_text {
@@ -430,7 +396,7 @@ body {
 }
 
 #gameboy_invent {
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     color: black;
@@ -441,12 +407,26 @@ body {
 }
 
 #gameboy_invent h2 span {
-    color: rgb(90, 87, 87);
+    color: #06c;
 }
 
+#gameboy_idea_text_wrap {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
 
-/* _________________________________________________________________________ */
-/* macintosh sida css */
+#gameboy_idea_text {
+    width: 80%;
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: left;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
 
 #macintosh_page_head {
     filter: brightness(0.8);
@@ -456,7 +436,7 @@ body {
     background: rgb(240, 240, 240);
 }
 
-.macintosh_quote  {
+.macintosh_quote {
     margin-top: 9%;
     overflow: visible;
 }
@@ -474,24 +454,23 @@ body {
 }
 
 #macintosh_ui_title {
-    font-size: 7em;
-    padding-bottom: 10%;
+    font-size: 7.5em;
+    padding-bottom: 20%;
 }
 
 #macintosh_ui_title span {
-    color: #a75b72;
+    color: #06c;
 }
 
 #ui_wrap h2 {
-     text-align: center;
-     width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 #macintosh_ui_gif {
     height: auto;
     width: 50vw;
     border-radius: 20px;
-
 }
 
 #macintosh_ui_text {
@@ -502,7 +481,7 @@ body {
     text-align: left;
     background: white;
     padding: 30px;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
 #macintosh_spec_wrap {
@@ -511,8 +490,6 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 40px 1px black;
-
 }
 
 #macintosh_spec_picture {
@@ -522,21 +499,17 @@ body {
     position: absolute;
     z-index: -100;
     filter: brightness(1);
-
 }
 
-#macintosh_spec_text{
+#macintosh_spec_text {
     color: white;
     font-size: 5em;
     text-align: center;
     line-height: 170px;
 }
 
-/* _________________________________________________________________________ */
-/* css för iphone sida */
-
 .iphone_quote {
-    padding-top: 8% ;
+    padding-top: 10%;
 }
 
 #iphone_page_head {
@@ -563,7 +536,7 @@ body {
 }
 
 #reinvent h2 span {
-    color: rgb(36 55 76);
+    color: #06c;
 }
 
 #iphone_design_wrap {
@@ -581,7 +554,6 @@ body {
     color: white;
     text-align: center;
     letter-spacing: 5px;
-
 }
 
 #iphone_design_title p {
@@ -613,7 +585,7 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 
 #iphone_screen_wrap {
@@ -621,7 +593,7 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -680,15 +652,7 @@ body {
     font-weight: 400;
 }
 
-
-
-
-
-/* _________________________________________________________________________ */
-/* css för mobile (alla sidor) */
-
 @media screen and (max-width: 1300px) {
-
     #body {
         width: 100vw;
         overflow: hidden;
@@ -771,7 +735,6 @@ body {
 
     .iphone_quote {
         padding-top: 30%;
-        padding-bottom: 70%;
     }
 
     #quote {
@@ -782,11 +745,13 @@ body {
         gap: 100px;
     }
 
-    #macintosh_text, #gameboy_text, #iphone_text {
+    #macintosh_text,
+    #gameboy_text,
+    #iphone_text {
         font-size: 1em;
         text-align: left;
         line-height: 300%;
-        padding: 5%;   
+        padding: 5%;
         width: 100vw;
         justify-self: center;
         margin: 0;
@@ -820,7 +785,9 @@ body {
         transform: translateX(200px);
     }
 
-    #iphone_picture, #macintosh_picture, #gameboy_picture {
+    #iphone_picture,
+    #macintosh_picture,
+    #gameboy_picture {
         filter: brightness(1.1);
     }
 
@@ -832,10 +799,11 @@ body {
     #gameboy_cpu_picture {
         width: 390px;
         object-fit: cover;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
-    #gameboy_ram_picture_wrap, #gameboy_screen_picture_wrap {
+    #gameboy_ram_picture_wrap,
+    #gameboy_screen_picture_wrap {
         width: 100vw;
         height: auto;
         overflow: visible;
@@ -846,14 +814,14 @@ body {
         width: 390px;
         height: 500px;
         object-fit: cover;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
     #gameboy_ram_picture {
         width: 390px;
         height: 500px;
         object-fit: cover;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
     #gameboy_spec_wrapper {
@@ -863,47 +831,57 @@ body {
         overflow: hidden;
     }
 
-    #gameboy_cpu_wrapper h2, #gameboy_screen_text, #gameboy_ram_text  {
+    #gameboy_cpu_wrapper h2,
+    #gameboy_screen_text,
+    #gameboy_ram_text {
         font-size: 3.5em;
     }
 
     #gameboy_invent {
-        font-size: 2.4em;
-        height: 70vh;
+        font-size: 2.3em;
+        height: 45vh;
     }
 
-    #macintosh_spec_text{
+    #macintosh_spec_text {
         font-size: 2em;
         text-align: center;
         line-height: 100px;
     }
-    
+
     #macintosh_ui_title {
         font-size: 3em;
         text-align: center;
     }
-    
+
     #macintosh_ui_gif {
         height: auto;
         width: 80vw;
         border-radius: 20px;
         margin-top: 1%;
         margin-bottom: 1%;
-    
     }
-    
+
     #macintosh_ui_text {
         width: 90vw;
         font-size: 1em;
         line-height: 30px;
         text-align: left;
         font-size: 1em;
+        margin-top: 50px;
     }
 
     #ui_wrap p {
         height: 300px;
     }
 
+    #gameboy_idea_text {
+        font-size: 1em;
+        line-height: 30px;
+        height: 300px;
+    }
+
+    #gameboy_idea_text_wrap {
+        height: 40vh;
+        padding-bottom: 0;
+    }
 }
-
-

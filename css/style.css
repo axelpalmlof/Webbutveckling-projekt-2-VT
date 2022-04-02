@@ -885,3 +885,10 @@ body {
         padding-bottom: 0;
     }
 }
+
+@media screen and (max-height: 700px) {
+
+    #quote {
+        font-size: 0.5em;
+    }
+}

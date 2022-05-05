@@ -68,7 +68,7 @@ body {
 #overlay-menu {
     display: none;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
@@ -110,6 +110,7 @@ body {
 .main_quote {
     padding-top: 12%;
     padding-bottom: 12%;
+
 }
 
 #quote h1 {
@@ -117,6 +118,7 @@ body {
     z-index: -1;
     font-weight: 400;
     font-size: 2em;
+    overflow: visible;
 }
 
 #main_wrapper {
@@ -724,11 +726,11 @@ body {
     }
 
     .main_quote {
-        padding-top: 35%;
+        padding-top: 20vh;
     }
 
     .gameboy_quote {
-        padding-top: 25%;
+        padding-top: 10vh;
     }
 
     .macintosh_quote {
@@ -897,4 +899,11 @@ body {
     #overlay-menu {
         padding-top: 150px;
     }
+}
+
+@media  screen and (max-width: 500px) {
+    
+
+
+
 }

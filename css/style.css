@@ -186,10 +186,10 @@ body {
     height: auto;
     background: #f5f5f7;
     grid-template-rows: repeat(3, 700px);
-    grid-template-areas: 
-    "a1 b1"
-    "a2 b2"
-    "a3 b3"
+    grid-template-areas:
+        "a1 b1"
+        "a2 b2"
+        "a3 b3"
     ;
     gap: 400px;
     padding-top: 200px;
@@ -655,7 +655,7 @@ body {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     #body {
         width: 100vw;
         overflow: hidden;
@@ -677,6 +677,7 @@ body {
     #iphone_design_text_wrap {
         margin-top: 20%;
         margin-bottom: 20%;
+        height: auto;
     }
 
     #iphone_screen_picture {
@@ -704,7 +705,9 @@ body {
         line-height: 30px;
         text-align: left;
         font-size: 1em;
-        height: 300px;
+        height: 40vh;
+        align-self: center;
+        justify-self: center;
     }
 
     #iphone_design_title {
@@ -726,15 +729,15 @@ body {
     }
 
     .main_quote {
-        padding-top: 20vh;
+        padding-top: 25vh;
     }
 
     .gameboy_quote {
-        padding-top: 10vh;
+        padding-top: 13vh;
     }
 
     .macintosh_quote {
-        padding-top: 10vh;
+        padding-top: 17vh;
     }
 
     .iphone_quote {
@@ -742,7 +745,7 @@ body {
     }
 
     #quote {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     #products_wrapper {
@@ -752,41 +755,35 @@ body {
     #macintosh_text,
     #gameboy_text,
     #iphone_text {
-        font-size: 1em;
-        text-align: left;
-        line-height: 300%;
-        padding: 5%;
-        width: 100vw;
-        justify-self: center;
-        margin: 0;
+        display: none;
     }
 
     #macintosh_text {
         grid-area: a2;
     }
 
-    #gameboy_picture:hover {
-        transform: translateX(100%);
-    }
-
-    #macintosh_picture:hover {
-        transform: translateX(-100%);
-    }
-
-    #iphone_picture:hover {
-        transform: translateX(100%);
-    }
-
     #gameboy_picture {
-        transform: translateX(250px);
+        pointer-events: none;
     }
 
     #macintosh_picture {
-        transform: translateX(-275px);
+        pointer-events: none;
     }
 
     #iphone_picture {
-        transform: translateX(200px);
+        pointer-events: none;
+    }
+
+    #gameboy_picture {
+        transform: translateX(70px);
+    }
+
+    #macintosh_picture {
+        transform: translateX(-10px);
+    }
+
+    #iphone_picture {
+        transform: translateX(0);
     }
 
     #iphone_picture,
@@ -901,9 +898,47 @@ body {
     }
 }
 
-@media  screen and (max-width: 500px) {
-    
+@media screen and (max-width: 500px) {
 
+    #macintosh_text,
+    #gameboy_text,
+    #iphone_text {
+        font-size: 1em;
+        text-align: left;
+        line-height: 300%;
+        padding: 5%;
+        width: 100vw;
+        justify-self: center;
+        margin: 0;
+        display: inline;
+    }
+
+    #gameboy_picture:hover {
+        transform: translateX(100%);
+    }
+
+    #macintosh_picture:hover {
+        transform: translateX(-100%);
+    }
+
+    #iphone_picture:hover {
+        transform: translateX(100%);
+    }
+
+    #gameboy_picture {
+        transform: translateX(230px);
+        pointer-events: all;
+    }
+
+    #macintosh_picture {
+        transform: translateX(-270px);
+        pointer-events: all;
+    }
+
+    #iphone_picture {
+        transform: translateX(195px);
+        pointer-events: all;
+    }
 
 
 }
